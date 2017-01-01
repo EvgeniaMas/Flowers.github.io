@@ -5,13 +5,58 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title> Flowerpots</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	
-	<link rel="stylesheet" href="css/style.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/popUp.min.js"  type="text/javascript" ></script>
-	<script src="js/cart.min.js"  type="text/javascript" ></script>
-	
+	<style type="text/css">
+
+
+header {
+    padding: 0;
+    margin: 0;
+
+}
+
+.first_screen {
+   height: 637px;  
+   background-image: url(img/backone1920.jpg); 
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   
+}
+
+.piece_of_summer {
+    
+    position: absolute;
+    text-transform: uppercase;
+    top: 29%;
+    left: 50%;
+    color: #5ca001;
+    width: 450px;
+    margin-left: -225px;
+    font-size: 34px; 
+    font-family: 'Roboto Slab Bold', arial;
+}
+
+.description {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 380px;
+    margin-left: -190px;
+    color: #4c6925;
+    font-size: 18px; 
+    text-align: center;
+
+}
+
+.short_description {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    color: #4c6925;
+    font-size: 14px; 
+    text-align: left;
+}
+	</style>
 	
 </head>
 <body>
@@ -32,14 +77,7 @@
 <a class="clear" href="#!" onclick="cart.clearBasket()">Очистить корзину</a>
 
 </div>
-<script>
-var priceList = {
-	"1" : {"id" : "1", "subid" : {}, "name" : "Базилик фиолетовый", "price" : "550"},
-	"2" : {"id" : "2", "subid" : {}, "name" : "Петрушка кучерявая", "price" : "400"},
-	"3" : {"id" : "3", "subid" : {}, "name" : "Укроп пахучий", "price" : "350"},
-	"4" : {"id" : "4", "subid" : {}, "name" : "Салат лолло-россо", "price" : "550"}
-	};
-</script>	
+
 
 
 <!--Form for link "Order a call from company" -->
@@ -142,8 +180,6 @@ var priceList = {
 </article>
 
 <!--  Advantages -->
-
-
 
 <article class="container advantage">
 <div class="text-center"> 
@@ -423,6 +459,18 @@ var priceList = {
 <button class="form_button"  onclick="cart.sendOrder('formToSend,overflw,bsum');">Отправить </button>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/popUp.min.js"  type="text/javascript" ></script>
+	<script src="js/cart.min.js"  type="text/javascript" ></script>
+
+<script>
+var priceList = {
+	"1" : {"id" : "1", "subid" : {}, "name" : "Базилик фиолетовый", "price" : "550"},
+	"2" : {"id" : "2", "subid" : {}, "name" : "Петрушка кучерявая", "price" : "400"},
+	"3" : {"id" : "3", "subid" : {}, "name" : "Укроп пахучий", "price" : "350"},
+	"4" : {"id" : "4", "subid" : {}, "name" : "Салат лолло-россо", "price" : "550"}
+	};
+</script>	
 
 <script>
 var cart;
@@ -445,3 +493,8 @@ cart.init("basketwidjet", config);
 
 </body>
 </html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/style.min.css">
+	
