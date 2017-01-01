@@ -7,29 +7,22 @@
 	<title> Flowerpots</title>
 	<style type="text/css">
 
-
 header {
-    padding: 0;
-    margin: 0;
+ display: block; 
+ height: 637px; 
 
 }
 
-.first_screen {
-   height: 637px;  
+
+#first_screen {
+    
    background-image: url(img/backone1920.jpg); 
-   background-position: center center;
+   background-position: top center;
    background-repeat: no-repeat;
    background-attachment: scroll;
-   
-}
+   height:100%;
 
-@media (max-width: 430px) {
-  .first_screen
-{
-    
-    min-height: 637px; 
-    
-} 
+   
 }
 
 
@@ -70,14 +63,21 @@ header {
 	
 </head>
 <body>
-<header  class="first_screen" >
+
+<header>
+ 
+ 
+ <div id=first_screen>
+  
+
 		<h1 class="short_description">Готовые наборы с витаминами <br> для продажи оптом и в розницу </h1>
 		<p class="piece_of_summer"> Возьми кусочек лета <br> себе на подоконник</p>
 		<p class="description">Яркий и уникальный готовый набор <br> с летними витаминами с доставкой <br> 1-3 дня </p>
 		<img class="icon" src="img/telephone.jpg" alt="phone"><p class="phone">8 000 000-00-00, 8 000 000-00-00</p>
 		<a  class="call" href="javascript:PopUpShow()">Заказать звонок</a>
 		<button class="btn btn-large button order text-center" onclick="javascript:PopUpShow2()"> Сделать заказ! </button>
-
+	</div>	
+	
 </header> 
 
 <div class="container text-center cart ">
